@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Web Server</title>
+    <style>
+        :root {
+            --primary-color: #00ffff; /* Neon cyan */
+            --secondary-color: #ff00ff; /* Neon magenta */
+            --background-color: #0d0d0d; /* Dark background */
+            --accent-color: #ffcc00; /* Neon yellow */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-shadow: 0 0 8px var(--primary-color), 0 0 16px var(--secondary-color);
+        }
+
+        h1 {
+            font-size: 3rem;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 8px var(--primary-color), 0 0 16px var(--secondary-color);
+            }
+            to {
+                text-shadow: 0 0 16px var(--accent-color), 0 0 32px var(--secondary-color);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to My Rust Web Server!</h1>
+</body>
+
+</html>
