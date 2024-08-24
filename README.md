@@ -95,4 +95,9 @@ This will execute all tests in the project and report the results.
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
+
+## Main Page
+![Description of the GIF](./misc/webserver.gif)
+
+
 ---

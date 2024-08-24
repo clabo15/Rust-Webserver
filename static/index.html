@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rust Web Server</title>
     <style>
+        /* Cyberpunk Color Palette */
         :root {
             --primary-color: #00ffff; /* Neon cyan */
             --secondary-color: #ff00ff; /* Neon magenta */
@@ -20,6 +21,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -40,11 +42,43 @@
                 text-shadow: 0 0 16px var(--accent-color), 0 0 32px var(--secondary-color);
             }
         }
+
+        /* Rustacean Logo Animations */
+        .rust-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            animation: spin-and-pulse 5s ease-in-out infinite;
+        }
+
+        @keyframes spin-and-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+            20% {
+                transform: rotate(360deg) scale(1.1);
+            }
+            40% {
+                transform: rotate(360deg) scale(1);
+            }
+            80% {
+                transform: rotate(360deg) scale(1.1);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
     </style>
 </head>
 
 <body>
     <h1>Welcome to My Rust Web Server!</h1>
+    <div class="rust-logo-container">
+        <img src="./static/images/rustacean-flat-happy.svg" alt="Rustacean Logo" class="rust-logo">
+    </div>
 </body>
 
 </html>
