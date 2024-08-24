@@ -8,3 +8,7 @@ edition = "2021"
 tokio = { version = "1", features = ["full"] }
 # Fast and flexible web framework for building web servers in Rust
 warp = "0.3"
+# Logging framework that supports structured logging
+tracing = "0.1"
+# Provides functionality like filtering, formatting, and handling of log output for a collection of subscribers
+tracing-subscriber = "0.3"
