@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# Asynchronous runtime for Rust
+tokio = { version = "1", features = ["full"] }
+# Fast and flexible web framework for building web servers in Rust
+warp = "0.3"
